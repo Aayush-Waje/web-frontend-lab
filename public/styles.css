@@ -1,0 +1,26 @@
+@keyframes rotating {
+    /* Starts at 0 degrees */
+    0% {
+        transform: rotate(0deg);
+    }
+    /* Rotates to 360 degrees, completing one full rotation */
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    font-family: arial;
+    font-size: 14px;
+}
+
+h2 {
+    color: red;
+}
+
+div.welcome {
+    animation: rotating 4s linear 1s;
+
+    /* Ensure the element behaves like a block for the transform to work reliably */
+    display: block;
+}
